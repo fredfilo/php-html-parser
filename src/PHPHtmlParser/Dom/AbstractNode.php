@@ -503,6 +503,8 @@ abstract class AbstractNode {
 	public function setAttribute($key, $value)
 	{
 		$this->tag->setAttribute($key, $value);
+		$this->clear();
+		
 		return $this;
 	}
 
